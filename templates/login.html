@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lms</title>
+    <style>
+        body{
+            background: #16a085;
+         }
+    </style>
+</head>
+<body>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <h1 align="center">图书管理系统</h1>
+        <p align="center">账号：<input type="text" placeholder="请输入账号" name="user_name" ></p>
+        <p align="center">密码：<input type="password" placeholder="请输入正确密码" name="pwd"></p>
+        <p align="center">{{error}}</p>
+        <p align="center">
+            <input type="submit" value="立即登录">
+            <a href="/register">注册新账号</a>
+        </p>
+    </form>
+</body>
+</html>

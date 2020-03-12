@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lms</title>
+    <style>
+        body {
+            background: #16a085;
+        }
+    </style>
+</head>
+<body>
+<a href="/book_list">返回</a>
+<h3 align="center">编辑书籍</h3>
+    <form action="" method="post">
+        <p align="center">书名: <input type="text" name="book_name" value="{{obj.book_name}}"></p>
+        <p align="center">作者: <input type="text" name="author" value="{{obj.author}}"></p>
+        <p align="center">出版社: <input type="text" name="publisher" value="{{obj.publisher}}"></p>
+        <h6 align="center">{{error}}</h6>
+        <p align="center">
+            <input type="submit" value="提交">
+        </p>
+    </form>
+</body>
+</html>
